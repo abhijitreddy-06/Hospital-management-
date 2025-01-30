@@ -1,0 +1,339 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #b6e2f1;
+  }
+  .hero-image img {
+    width: 100%;
+   object-fit: cover;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0078d7;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #ffcc00;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Burger Menu */
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero h1 span {
+    color: #ffcc00;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+  
+  /* About Section */
+  .about, .services, .contact {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about p, .services p, .contact p {
+    max-width: 600px;
+    margin: 10px auto;
+  }
+  
+  .services .service-card {
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact .btn {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    /* .btn-group{
+
+      
+      gap: 10px;
+      display: flex;
+      justify-content: center;
+    } */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #0078d7;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      border-radius: 5px;
+      width: 150px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  /* Appointment Container */
+.appointment-container {
+    background: url(/images/hero_bg.jpg) center/cover no-repeat;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .appointment-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay for better text visibility */
+    z-index: 1;
+  }
+  
+  .appointment-container .content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .appointment-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .appointment-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .appointment-container .btn {
+    background-color: #ffcc00;
+    color: #0078d7;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .appointment-container .btn:hover {
+    background-color: #0078d7;
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .appointment-container h2 {
+      font-size: 28px;
+    }
+  
+    .appointment-container p {
+      font-size: 16px;
+    }
+  }
+  
+  
+/* Footer */
+/* Footer Styling */
+.footer {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    line-height: 1.8;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  }
+  

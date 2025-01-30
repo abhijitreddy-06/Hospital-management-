@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar">
+    <div class="logo">Hospital<span>Care</span></div>
+    <ul class="nav-links">
+      <li><a href="/pages/index.html">Home</a></li>
+      <li><a href="/pages/login.html">User login</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+
+  <div class="login-container">
+    <!-- Image Section -->
+    <div class="image-container">
+      <img src="/images/login_doc.jpg" alt="Login Image">
+    </div>
+
+    <!-- Login Form Section -->
+    <div class="form-container">
+      <h1>Admin Login</h1>
+      <form id="adminlogin_form" action="/admin-login" method="post">
+        <!-- Username -->
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password">Password</label>
+        <input type="password" id="password " name="password" placeholder="Enter your password" required>
+        </div>
+        <!-- Remember Me -->
+        <div class="form-group checkbox">
+          <span><input type="checkbox" id="remember" name="remember"></span>
+          <span><label for="remember">Remember Me</label></span>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn">login</button>
+        <!-- Forgot Password -->
+        <div class="forgot-password">
+          <a href="/pages/login.html" >Not an Admin ? </a>
+          <br />
+        </div>
+      </form>
+    </div>
+  </div>
+ 
+  <script src="/js/user_info.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+
+</html>

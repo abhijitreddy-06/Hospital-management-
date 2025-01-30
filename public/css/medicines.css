@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column; /* Arrange content in a vertical column */
+  min-height: 100vh; /* Ensure the body is at least the height of the viewport */
+}
+
+.hero-section a{
+  text-decoration: none;
+  color: #000;
+}
+.logo{
+  margin-left: 10px;
+}
+.navbar a{
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Wrapper for Main Content */
+.carousel-item img {
+  width: 100%; /* Full width */
+  height: 400px; /* Adjust height as needed */
+  object-fit:cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}
+
+.wrapper {
+  flex: 1; /* Ensures the wrapper takes up the remaining space */
+  padding: 20px; /* Add padding for the main content */
+  margin-top: 25px;}
+
+/* Medicine Section */
+.hero-section {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+.price {
+  font-size: 18px; 
+  font-weight: bold;
+  color: #28a745; 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: #e8f5e9;
+  padding: 8px 12px; 
+  border-radius: 8px; 
+  display: inline-block; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.box {
+  width: 300px;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.name-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.name-button p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.add-to-cart {
+  background: #FFD700; /* Yellow color */
+  color: #000; /* Black text */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #1E90FF; /* Blue color */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.add-to-cart:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly reduced shadow when pressed */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background-color: #0078d7;
+  color: #fff;
+  padding: 20px;
+  font-size: 14px;
+  width: 100%; /* Ensures it spans the entire width */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box {
+      width: 80%;
+  }
+}

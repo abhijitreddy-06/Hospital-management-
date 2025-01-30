@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/css/signup.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Hospital<span>Care</span></div>
+      <ul class="nav-links">
+        <li><a href="/pages/index.html">Home</a></li>
+        <li><a href="/pages/login.html">Login</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  <!-- Header Section -->
+  <header class="signup-header">
+    <h1>Create Your Account</h1>
+    <p>Join us for a seamless healthcare experience.</p>
+  </header>
+
+  <!-- Sign-Up Form Section -->
+  <main class="signup-content">
+    <div class="form-container">
+      <form action="/Signup" method="post">
+        <h2>Sign Up</h2>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+        <p class="login-link">Already have an account? <a href="/public/login/login.html">Log In</a></p>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="signup-footer">
+    <p>&copy; 2025 HospitalCare. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/css/admin.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Hospital<span>Care</span></div>
+    <ul class="nav-links">
+      <li><a href="/pages/admin.html">Home</a></li>
+      <li><a href="/pages/index.html">Logout</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </nav>
+  <!-- Dashboard Header -->
+  <header class="dashboard-header">
+    <h1>Welcome, Admin</h1>
+    <p>Manage and oversee hospital operations at a glance.</p>
+  </header>
+  <!-- Dashboard Stats -->
+  <div class="dashboard-container">
+    <div class="stats-grid">
+      <!-- Total Rooms -->
+      <div class="stats-card">
+        <i class="fas fa-procedures"></i>
+        <h2>Total Rooms</h2>
+        <p>50</p>
+      </div>
+      <!-- Total Patients -->
+      <div class="stats-card">
+        <i class="fas fa-users"></i>
+        <h2>Total Patients</h2>
+        <p>120</p>
+      </div>
+      <!-- Total Staff -->
+      <div class="stats-card">
+        <i class="fas fa-user-md"></i>
+        <h2>Total Staff</h2>
+        <p>45</p>
+      </div>
+      <!-- Appointments -->
+      <div class="stats-card">
+        <i class="fas fa-calendar-check"></i>
+        <h2>Appointments</h2>
+        <p id="totalAppointments">Loading...</p>
+        
+      </div>
+      <!-- Medicines -->
+      <div class="stats-card">
+        <i class="fas fa-pills"></i>
+        <h2>Medicines in Stock</h2>
+        <p>200</p>
+      </div>
+      <!-- Revenue -->
+      <div class="stats-card">
+        <i class="fas fa-dollar-sign"></i>
+        <h2>Revenue</h2>
+        <p>$5000</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 HospitalCare. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="/js/script.js"></script>
+</body>
+</html>

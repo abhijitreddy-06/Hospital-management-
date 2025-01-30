@@ -1,0 +1,13 @@
+.dropdown-item:hover{
+  background-color: yellow;
+}
+.dropdown-menu li :hover{
+  color: black;
+  font-weight: 500;
+}
+.navbar a {
+  text-decoration: none;
+}
+.logo{
+  margin-left: 10px;
+}
